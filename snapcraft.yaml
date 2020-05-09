@@ -27,3 +27,5 @@ parts:
 layout:
   /etc/octoprint:
     bind: $SNAP_COMMON/basedir
+  /usr/lib/python3/dist-packages:
+    bind: $SNAP_COMMON/dist-packages
