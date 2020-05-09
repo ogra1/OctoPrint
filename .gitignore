@@ -12,6 +12,7 @@ devtools
 *.zip
 *.exe
 *.swp
+*.snap
 darwin-Cura-*
 win32-Cura-*
 linux-Cura-*
