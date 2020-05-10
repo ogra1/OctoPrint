@@ -6,7 +6,7 @@ description: |
   Control and monitor every aspect of your 3D printer and your printing jobs
   right from within your browser. OctoPrint is compatible with most of the
   available consumer 3D printers.
-grade: devel
+grade: stable
 confinement: strict
 
 apps:
