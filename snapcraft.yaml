@@ -6,7 +6,7 @@ description: |
   Control and monitor every aspect of your 3D printer and your printing jobs
   right from within your browser. OctoPrint is compatible with most of the
   available consumer 3D printers.
-grade: stable
+grade: devel
 confinement: strict
 
 apps:
@@ -15,7 +15,7 @@ apps:
       LC_ALL: "C.UTF-8"
       LANG: "C.UTF-8"
     command: bin/octoprint serve --iknowwhatimdoing --basedir /etc/octoprint
-    plugs: [home, network-bind]
+    plugs: [network-bind, serial-port]
     daemon: simple
 
 parts:
@@ -31,11 +31,3 @@ layout:
     bind: $SNAP_COMMON/dist-packages
   $SNAP/usr/local/lib/python3/dist-packages:
     bind: $SNAP_COMMON/dist-packages-local
-
-slots:
-  s0:
-    interface: serial-port
-    path: /dev/ttyS0
-  acm0:
-    interface: serial-port
-    path: /dev/ttyACM0
