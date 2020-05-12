@@ -31,3 +31,5 @@ layout:
     bind: $SNAP_COMMON/dist-packages
   $SNAP/usr/local/lib/python3/dist-packages:
     bind: $SNAP_COMMON/dist-packages-local
+  $SNAP/usr/lib/python3/site-packages:
+    bind: $SNAP_COMMON/site-packages
